@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 2px);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.ColorBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 250px;
+  min-width: 250px;
+  height: 250px;
+  min-height: 250px;
+
+  border: 2px solid black;
+  border-radius: 5px;
+
+  margin: 10px;
+}
+
+input {
+  width: 250px;
+  min-width: 250px;
+  height: 40px;
+
+  border-radius: 5px;
+
+  padding: 5px;
+  font-size: 22px;
+
+  user-select: none;
+}
+
+input:focus {
+  outline: none;
+}
