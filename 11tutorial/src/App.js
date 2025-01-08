@@ -16,7 +16,7 @@ function App() {
   // Stores the current searched item
   const [search, setSearch] = useState('');
 
-  // Use useEffect with a dependency of items to only run when items gets updated (instead of every time render occurs)
+  // Use useEffect with a dependency of items to only run when items list gets updated (instead of every time render occurs)
   useEffect(() => {
     localStorage.setItem('shoppinglist', JSON.stringify(items));
   }, [items]);
