@@ -1,5 +1,6 @@
 import Tabs from './Tabs.js';
 import List from './List.js';
+import Table from './Table.js';
 
 import './index.css';
 
@@ -28,8 +29,11 @@ function App() {
         selected={selected}
         setSelected={setSelected}
       />
-      {/* Create a bulleted item for each line of JSON data in the current request */}
-      <List listItems={listItems} />
+      {/* Uncomment below for Part A */}
+      {/* <List listItems={listItems} /> */}
+
+      {/* Create a table each line of JSON data in the current request */}
+      <Table listItems={listItems} />
     </div>
   );
 }
