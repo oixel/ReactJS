@@ -1,4 +1,5 @@
 import Tabs from './Tabs.js';
+import List from './List.js';
 
 import './index.css';
 
@@ -28,9 +29,7 @@ function App() {
         setSelected={setSelected}
       />
       {/* Create a bulleted item for each line of JSON data in the current request */}
-      <ul>
-        {listItems.map((data, index) => <li id={index}>{JSON.stringify(data)}</li>)}
-      </ul>
+      <List listItems={listItems} />
     </div>
   );
 }
